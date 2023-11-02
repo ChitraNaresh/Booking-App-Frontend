@@ -13,7 +13,7 @@ const ProtectedRoute = (props) => {
     const getUser = async () => {
       try {
         const response = await axios.post(
-          "https://boo-app.onrender.com/api/user/get-user-info-by-id",
+          "https://booking-web5.onrender.com/api/user/get-user-info-by-id",
           { token: localStorage.getItem("token") },
           {
             headers: {

@@ -15,7 +15,7 @@ const DoctorsList = () => {
   const getDoctorsData = async () => {
     try {
       dispatch(showLoading());
-      const response = await axios.get("https://boo-app.onrender.com/api/admin/get-all-doctors", {
+      const response = await axios.get("https://booking-web5.onrender.com/api/admin/get-all-doctors", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
@@ -35,7 +35,7 @@ const DoctorsList = () => {
     console.log(23)
     try {
       dispatch(showLoading());
-      const response = await axios.post("/api/admin/change-doctor-status",
+      const response = await axios.post("https://booking-web5.onrender.com/api/admin/change-doctor-status",
       {doctorId:record._id,userId:record.userId,status:status},
        {
         headers: {

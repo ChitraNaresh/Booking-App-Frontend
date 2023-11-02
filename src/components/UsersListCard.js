@@ -7,7 +7,7 @@ const UserListCard = ({ doctor }) => {
   return (
     <div
       className="card p-2 each-card"
-      onClick={() => navigate(`https://boo-app.onrender.com/book-appointment/${doctor._id}`)}
+      onClick={() => navigate(`/book-appointment/${doctor._id}`)}
     >
       <p className="data-value">
         <b>Name : </b> {doctor.name}

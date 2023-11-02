@@ -13,7 +13,7 @@ const Home = () => {
   const getData = async () => {
     dispatch(showLoading());
     try {
-      const response = await axios.get("https://boo-app.onrender.com/api/user/get-all-approved-doctors", {
+      const response = await axios.get("https://booking-web5.onrender.com/api/user/get-all-approved-doctors", {
         headers: {
           Authorization: "Bearer " + localStorage.getItem("token"),
         },

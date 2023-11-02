@@ -23,7 +23,7 @@ const BookAppointment = () => {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "https://boo-app.onrender.com/api/user/check-booking-availability",
+        "https://booking-web5.onrender.com/api/user/check-booking-availability",
         {
           doctorId: params.doctorId,
           date: date,
@@ -53,7 +53,7 @@ const BookAppointment = () => {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "/api/user/book-appointment",
+        "https://booking-web5.onrender.com/api/user/book-appointment",
         {
           doctorId: params.doctorId,
           date: date,
@@ -81,7 +81,7 @@ const BookAppointment = () => {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "https://boo-app.onrender.com/api/user/get-doctor-info-by-doctor-id",
+        "https://booking-web5.onrender.com/api/user/get-doctor-info-by-doctor-id",
         { doctorId: params.doctorId },
         {
           headers: {

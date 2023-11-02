@@ -15,7 +15,7 @@ const Notifications = () => {
   const markAllAsSeen = async () => {
     try {
       dispatch(showLoading());
-      const response = await axios.post("https://boo-app.onrender.com/api/user/mark-all-notifications-as-seen", {
+      const response = await axios.post("https://booking-web5.onrender.com/api/user/mark-all-notifications-as-seen", {
         userId: user._id,
       },{
         headers:{
@@ -39,7 +39,7 @@ const Notifications = () => {
   const deleteAll = async () => {
     try {
       dispatch(showLoading());
-      const response = await axios.post("https://boo-app.onrender.com/api/user/delete-all-notifications", {
+      const response = await axios.post("https://booking-web5.onrender.com/api/user/delete-all-notifications", {
         userId: user._id,
       },{
         headers:{

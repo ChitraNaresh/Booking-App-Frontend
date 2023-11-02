@@ -15,9 +15,9 @@ const Register = () => {
     console.log(value);
     try {
       dispatch(showLoading())
-      const response = await axios.post("https://boo-app.onrender.com/api/user/register", value);
-      dispatch(hideLoading())
+      const response = await axios.post("https://booking-web5.onrender.com/api/user/register", value);
       console.log(response, response.data);
+      dispatch(hideLoading())
       if (response.data.success) {
         toast.success(response.data.message);
         navigate("/login");

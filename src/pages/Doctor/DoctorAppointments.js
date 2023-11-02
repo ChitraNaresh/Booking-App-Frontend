@@ -16,7 +16,7 @@ const DoctorAppointments = () => {
     try {
       dispatch(showLoading());
       const response = await axios.get(
-        "/api/admin/get-appointments-by-doctor-id",
+        "https://booking-web5.onrender.com/api/admin/get-appointments-by-doctor-id",
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -37,7 +37,7 @@ const DoctorAppointments = () => {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "/api/admin/change-appointment-status",
+        "https://booking-web5.onrender.com/api/admin/change-appointment-status",
         { appointmentId: record._id,status: status },
         {
           headers: {

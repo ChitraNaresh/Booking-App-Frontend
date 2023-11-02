@@ -15,7 +15,7 @@ const Appointments = () => {
     const getAppointmentsData = async () => {
       try {
         dispatch(showLoading());
-        const response = await axios.get("https://boo-app.onrender.com/api/admin/get-appointments-by-user-id", {
+        const response = await axios.get("https://booking-web5.onrender.com/api/admin/get-appointments-by-user-id", {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },

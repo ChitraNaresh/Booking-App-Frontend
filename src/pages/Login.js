@@ -15,7 +15,7 @@ const Login = () => {
   const onFinish = async (value) => {
     try {
       dispatch(showLoading());
-      const response = await axios.post("/api/user/login", value);
+      const response = await axios.post("https://booking-web5.onrender.com/api/user/login", value);
       dispatch(hideLoading());
       console.log(response, response.data);
       if (response.data.success) {
@@ -27,8 +27,8 @@ const Login = () => {
         toast.error(response.data.message);
       }
     } catch (error) {
-      toast.error("Something went wrong!");
       dispatch(hideLoading());
+      toast.error("Something went wrong!");
     }
   };
   return (

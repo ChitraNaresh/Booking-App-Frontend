@@ -14,7 +14,7 @@ const UsersList = () => {
   const getUserData = async () => {
     try {
       dispatch(showLoading());
-      const response = await axios.get("https://boo-app.onrender.com/api/admin/get-all-users", {
+      const response = await axios.get("https://booking-web5.onrender.com/api/admin/get-all-users", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },

@@ -18,7 +18,7 @@ const DoctorProfile = () => {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "/api/user/update-doctor-profile",
+        "https://booking-web5.onrender.com/api/user/update-doctor-profile",
         {
           ...value,
           userId: user.id,
@@ -52,7 +52,7 @@ const DoctorProfile = () => {
     try {
       dispatch(showLoading())
       const response = await axios.post(
-        "/api/user/get-doctor-info-by-user-id",
+        "https://booking-web5.onrender.com/api/user/get-doctor-info-by-user-id",
         { userId: params.doctorId },
         {
           headers: {

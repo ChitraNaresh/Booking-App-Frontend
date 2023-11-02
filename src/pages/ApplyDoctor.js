@@ -18,7 +18,7 @@ const ApplyDoctor = () => {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "https://boo-app.onrender.com/api/user/apply-doctor-account",
+        "https://booking-web5.onrender.com/api/user/apply-doctor-account",
         {
           ...value,
           userId: user.id,

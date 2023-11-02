@@ -13,7 +13,7 @@ const DoctorAppointmentsCard = ({ doctor ,getAppointmentsData}) => {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "https://boo-app.onrender.com/api/admin/change-appointment-status",
+        "https://booking-web5.onrender.com/api/admin/change-appointment-status",
         { appointmentId: record._id,status: status },
         {
           headers: {
